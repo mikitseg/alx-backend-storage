@@ -1,0 +1,3 @@
+// Retrieve all documents from the collection named "school" where the name field starts with "Holberton". 
+// The database name will be specified as an option in the mongo command.
+db.school.find({ "name": {$regex: "^Holberton"} })
